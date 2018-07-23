@@ -1,0 +1,19 @@
+{
+    "name": "ResurseCrestine PPT",
+    "version": "1.0.1",
+    "description": "Transformă cântecele de pe resursecrestine.ro in powerpoint.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.resursecrestine.ro/cantece/*"
+            ],
+            "js": [
+                "content_script.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "images/icon.png"
+    },
+    "manifest_version": 2
+}
